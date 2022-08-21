@@ -18,6 +18,13 @@ model Example {
     id String @id @default(cuid())
 }
 
+model Guestbook {
+    id       String   @id @default(cuid())
+    createAt DateTime @default(now())
+    name     String
+    message  String   @db.VarChar(100)
+}
+
 // Necessary for Next auth
 model Account {
     id                String  @id @default(cuid())

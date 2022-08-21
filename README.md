@@ -4,7 +4,7 @@ createBy: Hanzomaster
 
 # Guestbook for Hanzo
 
-Send me a message, any message (remember to login with Discord) :v
+Send me a message, any message [here](https://guestbook-hanzomaster.vercel.app/) (remember to login with Discord) :v
 
 ## Stack
 

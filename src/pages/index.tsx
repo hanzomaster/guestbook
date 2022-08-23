@@ -1,6 +1,5 @@
 import type { NextPage } from "next"
 import { signIn, signOut, useSession } from "next-auth/react"
-import Head from "next/head"
 import { useState } from "react"
 import { trpc } from "../utils/trpc"
 
@@ -12,10 +11,10 @@ const Home: NextPage = () => {
     onMutate: () => {
       ctx.cancelQuery(["guestbookgetAll"])
 
-      const optimisticupdate = ctx.getQueryData(["guestbookgetAll"])
+      const optimisticUpdate = ctx.getQueryData(["guestbookgetAll"])
 
-      if (optimisticupdate) {
-        ctx.setQueryData(["guestbookgetAll"], optimisticupdate)
+      if (optimisticUpdate) {
+        ctx.setQueryData(["guestbookgetAll"], optimisticUpdate)
       }
     },
     onSettled: () => {

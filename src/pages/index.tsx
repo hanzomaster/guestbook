@@ -88,9 +88,13 @@ const Messages = () => {
     return <div>Fetching messages...</div>
   }
 
+  if (!messages || messages.length === 0) {
+    return <div>No messages yet</div>
+  }
+
   return (
     <div>
-      {messages?.map((msg, index) => {
+      {messages.map((msg, index) => {
         return (
           <div key={index}>
             <p>{msg.message}</p>

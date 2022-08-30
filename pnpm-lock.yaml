@@ -19,6 +19,7 @@ specifiers:
   eslint-plugin-prettier: ^4.2.1
   next: 12.2.5
   next-auth: ^4.10.3
+  nodemailer: ^6.7.8
   postcss: ^8.4.16
   prettier: ^2.7.1
   prettier-plugin-tailwindcss: ^0.1.13
@@ -39,7 +40,8 @@ dependencies:
   '@trpc/react': 9.27.1_lsv5lrloaktxua3ujwhxv56iee
   '@trpc/server': 9.27.1
   next: 12.2.5_biqbaboplfbrettd7655fr4n2y
-  next-auth: 4.10.3_biqbaboplfbrettd7655fr4n2y
+  next-auth: 4.10.3_br325yun545l5vwdnneu6tztxq
+  nodemailer: 6.7.8
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-query: 3.39.2_biqbaboplfbrettd7655fr4n2y
@@ -123,7 +125,7 @@ packages:
       next-auth: ^4
     dependencies:
       '@prisma/client': 4.2.1_prisma@4.2.1
-      next-auth: 4.10.3_biqbaboplfbrettd7655fr4n2y
+      next-auth: 4.10.3_br325yun545l5vwdnneu6tztxq
     dev: false
 
   /@next/env/12.2.5:
@@ -1788,7 +1790,7 @@ packages:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
     dev: true
 
-  /next-auth/4.10.3_biqbaboplfbrettd7655fr4n2y:
+  /next-auth/4.10.3_br325yun545l5vwdnneu6tztxq:
     resolution: {integrity: sha512-7zc4aXYc/EEln7Pkcsn21V1IevaTZsMLJwapfbnKA4+JY0+jFzWbt5p/ljugesGIrN4VOZhpZIw50EaFZyghJQ==}
     engines: {node: ^12.19.0 || ^14.15.0 || ^16.13.0}
     peerDependencies:
@@ -1803,6 +1805,7 @@ packages:
       '@panva/hkdf': 1.0.2
       cookie: 0.4.2
       jose: 4.9.0
+      nodemailer: 6.7.8
       oauth: 0.9.15
       openid-client: 5.1.8
       preact: 10.10.6
@@ -1860,6 +1863,11 @@ packages:
   /node-releases/2.0.6:
     resolution: {integrity: sha512-PiVXnNuFm5+iYkLBNeq5211hvO38y63T0i2KKh2KnUs3RpzJ+JtODFjkD8yjLwnDkTYF1eKXheUwdssR+NRZdg==}
     dev: true
+
+  /nodemailer/6.7.8:
+    resolution: {integrity: sha512-2zaTFGqZixVmTxpJRCFC+Vk5eGRd/fYtvIR+dl5u9QXLTQWGIf48x/JXvo58g9sa0bU6To04XUv554Paykum3g==}
+    engines: {node: '>=6.0.0'}
+    dev: false
 
   /normalize-path/3.0.0:
     resolution: {integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==}

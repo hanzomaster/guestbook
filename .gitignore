@@ -41,3 +41,7 @@ yarn-error.log*
 
 # Jetbrains
 /.idea
+
+.env*
+!.env.project
+!.env.vault
